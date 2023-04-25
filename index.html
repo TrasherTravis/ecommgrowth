@@ -21,19 +21,21 @@
       <div class="logo">
         <h4>eCommGrowth</h4>
       </div>
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about-section">About</a></li>
-        <li><a href="#services">Service</a></li>
-        <li><a href="#contact-section">Contact Us</a></li>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+      </label>
+
+      <ul class="nav-menu">
+        <li><a href="#hero-section" >Home</a></li>
+        <li><a href="#about-section" >About</a></li>
+        <li><a href="#services" >Service</a></li>
+        <li><a href="#contact-section" >Contact Us</a></li>
       </ul>
-      <div class="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </div>
     </nav>
   </header>
-
   <main>
+    <div>
     <section id="hero-section">
       <h1>Welcome to eComm Growth</h1>
       <p> Your go-to source for expert guidance on selling products on Amazon and other online marketplaces.</p>
@@ -51,9 +53,9 @@
         </span> 
       </a>
     </div>
-
-  </section>
-
+    </section>
+    </div>
+     <div id="about-section">
     <section id="about-section">
       <h2>About Us</h2>
       <p><a>We are a team of experts in selling on Amazon and other platforms. We have helped many businesses achieve
@@ -72,11 +74,11 @@
 
         <p> Whether you're just starting out or you're an experienced seller looking to grow your business, eCommgrowth
           is here to help. Contact us today to learn more about our services and how we can help you achieve your
-          e-commerce goals.</p>
-      
+          e-commerce goals.</p> 
     </section>
-
-    <section id="services">
+    </div>
+     <div id="services">
+     <section id="services">
       <h2>Our Services</h2>
       <div class="services-container">
         <div class="service-card">
@@ -109,27 +111,34 @@
           <p>We also offer services for selling on other online marketplaces, such as Walmart, Shopify, and more.</p>
         </div>
       </div>
-    </section>
+     </section>
+    </div>
 
 
-<!-- Testimony Secction Here!-->
-  
-<!-- Carousel wrapper -->
-
-<!-- Carousel wrapper -->
 
 
     <section id="contact-section">
 
 
       <div class="contact-form">
-        <form>
+        <form action="https://formsubmit.co/advestdigital@gmail.com" method="POST">
           <h2>Contact Us</h2>
           <input type="text" placeholder="Name" id="name" name="name" required>
 
           <input type="email" placeholder="Email" id="email" name="email" required>
+         
+          <input type="text" placeholder="Phone no" id="no" name="phone no" required>
+         
+        
+          <select name="our" value="Select Service" id="serv">
+            <option value="Sell on Amazon"><a>Sell on Amazon</a></option>
+            <option value="Sell on eBay">Sell on eBay</option>
+            <option value="Sell on Etsy">Sell on Etsy</option>
+            <option value="Other Platforms">Other Platforms</option>
+          </select>
 
-          <textarea id="message" name="message" required></textarea>
+        
+          <textarea id="message" name="message" placeholder="Enter text here!" required></textarea>
 
           <button type="submit" id="button">Send Message</button>
         </form>
