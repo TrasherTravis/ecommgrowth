@@ -173,19 +173,6 @@ li a{
    /* border: 1px solid white; */
 }
 
-.footer-text:hover{
-    color: #48139c;
-    cursor: pointer;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.social ul li:hover {
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.158);
-  color: black;
-  border-radius: 22px;
-}
 
 .logo-text{
     color: rgb(209, 214, 227);
@@ -197,6 +184,9 @@ li a{
 }
 
 @media screen and (max-width: 992px){
+    .mr-3{
+        text-align: center;
+    }
     .toggleColour{
         color: black;
     }
