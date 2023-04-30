@@ -19,6 +19,18 @@ font-weight: 2rem;
 }
 
 
+
+.lets{
+  animation: pulse 3s infinite 3s cubic-bezier(0.25, 0, 0, 1);
+  box-shadow: 0 0 0 0 white;
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 18px rgba(255, 255, 255, 0); 
+  }
+}
+
 a::before {
   content: '';
   position: absolute;
@@ -86,11 +98,9 @@ transform: scaleX(1);
   max-width: 400px;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
   box-shadow: 5px 5px 5px #48139c ;
-
-
+  
 }
 
 .contact-form input,
@@ -103,7 +113,7 @@ transform: scaleX(1);
   box-shadow: inset 0px 0px 1px rgba(105, 103, 103, 0.1);
   width: 90%;
   color:black;
-  cursor: pointer;
+  cursor: text;
 }
 
 .contact-form textarea {
@@ -140,6 +150,8 @@ transform: scaleX(1);
     color: #fff;
     text-decoration: none;
   }
+
+  
   
 
   @import url(//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css);
@@ -188,7 +200,7 @@ transform: scaleX(1);
 .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
-  height: 100px;
+  height: 150px;
   position: absolute;
   width: 200px;
   z-index: 2;
@@ -253,6 +265,20 @@ li a{
 .mr-3{
   margin-right: 3%;
 }
+
+.verified{
+margin-left: 10%;
+border-radius:16px;;
+animation: pulse 3s infinite 3s cubic-bezier(0.25, 0, 0, 1);
+box-shadow: 0 0 0 0 white;
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0); 
+  }
+}
+
 @media screen and (max-width: 992px){
     .mr-3{
         text-align: center;
@@ -264,5 +290,6 @@ li a{
     .verified{
 
       display:flex;
+      padding-left: auto;
     }
   }
