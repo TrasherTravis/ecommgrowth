@@ -87,7 +87,7 @@ transform: scaleX(1);
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(90deg, #f8f5f6 0%, #f5f4f4 100%);
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
   box-shadow: 5px 5px 5px #48139c ;
 
 
@@ -163,6 +163,50 @@ transform: scaleX(1);
     cursor: default;
 }
 
+/* Brands Logo */
+
+.wrapper{
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  background-color: #fff;
+}
+
+article {
+  display: flex;
+  width: 200%;
+  animation: bannermove 25s linear infinite;
+
+}
+
+article.paused {
+  -webkit-animation-play-state:running;
+  animation-play-state:running;
+}
+
+
+.slider>ul{
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.slider>ul>li{
+  padding: 1% 5%;
+  width: 30%;
+}
+
+
+
+@keyframes bannermove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 /* Testimonials */
 
@@ -183,7 +227,7 @@ li a{
    /* border: 1px solid white; */
 }
 
-
+/* 
 .logo-text{
     color: rgb(209, 214, 227);
 }
@@ -191,6 +235,11 @@ li a{
 .logo-text svg{
     height: 50px;
     width: 50px;
+} */
+
+.footer-logo{
+  width: 200px;
+  height: 75px;
 }
 
 .mr-3{
@@ -203,4 +252,9 @@ li a{
     .toggleColour{
         color: black;
     }
-}
+
+    .verified{
+
+      display:flex;
+    }
+  }
