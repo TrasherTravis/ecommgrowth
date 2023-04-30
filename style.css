@@ -1,5 +1,9 @@
-.mr-3{
-   font-size: 18px;
+.menu-items{
+   font-size: 20px;
+   font-weight: bold;
+   color: #fff;
+   /* justify-content: space-between; */
+
 }
 .toggleColour{
 font-weight: 2rem;
@@ -7,7 +11,7 @@ font-weight: 2rem;
 
 .menu-item:hover{
 
-text-decoration: underline;
+  text-decoration: underline;
   text-decoration-color: black;
   -moz-text-decoration-color: black;
   text-decoration-thickness: 5px;
@@ -130,6 +134,12 @@ transform: scaleX(1);
     text-align: center;
     color: #070707;
   }
+
+  .submit:hover{
+    background-color: #886fcc;
+    color: #fff;
+    text-decoration: none;
+  }
   
 
   @import url(//cdn.rawgit.com/rtaibah/dubai-font-cdn/master/dubai-font.css);
@@ -183,6 +193,9 @@ li a{
     width: 50px;
 }
 
+.mr-3{
+  margin-right: 3%;
+}
 @media screen and (max-width: 992px){
     .mr-3{
         text-align: center;
