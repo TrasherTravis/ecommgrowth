@@ -238,13 +238,10 @@ li a{
     color: rgb(209, 214, 227);
 }
 
-/* .social{
-  border: 1px solid white;
-} */
-.social ul li{
-   padding: 10px;
-   
-   /* border: 1px solid white; */
+
+
+.social>a svg:hover {
+  cursor: pointer;
 }
 
 /* 
@@ -268,7 +265,7 @@ li a{
 
 .verified{
 margin-left: 10%;
-border-radius:16px;;
+border-radius:22px;;
 animation: pulse 3s infinite 3s cubic-bezier(0.25, 0, 0, 1);
 box-shadow: 0 0 0 0 white;
 }
@@ -285,6 +282,14 @@ box-shadow: 0 0 0 0 white;
     }
     .toggleColour{
         color: black;
+    }
+
+    /* #nav-toggle{
+      color: #070707;
+    } */
+
+    .lets{
+      visibility: hidden;
     }
 
     .verified{
