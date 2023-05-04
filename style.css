@@ -251,6 +251,22 @@ li a{
     color: rgb(209, 214, 227);
 }
 
+#pricing{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#pricing ul li {
+  align-items: center;
+  text-align: center;
+}
+
+
+.pay{
+  justify-content: center;
+  background-color: #48139c;
+}
 
 
 .social>a svg:hover {
