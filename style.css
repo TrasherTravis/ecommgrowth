@@ -1,3 +1,10 @@
+html, body {
+  width: 100%;
+  margin: 0; 
+  padding: 0; 
+  overflow-x: hidden;
+}
+
 .menu-items{
    font-size: 20px;
    font-weight: bold;
@@ -292,14 +299,21 @@ box-shadow: 0 0 0 0 white;
 .about{
   padding-left:10%;
   padding-right:10% ;
+  
 }
+
+.content{
+    padding: 0% 20%;
+    line-height: 2;
+}
+
 @keyframes pulse {
   to {
     box-shadow: 0 0 0 8px rgba(255, 255, 255, 0); 
   }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 1024px){
     .mr-3{
         text-align: center;
     }
@@ -320,4 +334,28 @@ box-shadow: 0 0 0 0 white;
       display:flex;
       padding-left: auto;
     }
+
+    .content{
+      font-size:large;
+      padding: 5%;
+      overflow: hidden;
+    }
+
+   
+  }
+
+  @media screen and (max-width: 670px){
+    .about{
+      font-size: 18px;;
+    }
+
+    .about-solution h2{
+      font-size: 24px;
+      padding: 0px 20px;
+    }
+
+    .content{
+      padding: 5%;
+    }
+
   }
