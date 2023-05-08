@@ -251,21 +251,12 @@ li a{
     color: rgb(209, 214, 227);
 }
 
-#pricing{
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-#pricing ul li {
-  align-items: center;
-  text-align: center;
-}
-
-
 .pay{
   justify-content: center;
   background-color: #48139c;
+}
+.solution-text{
+  color:#48139c;
 }
 
 
@@ -298,7 +289,10 @@ border-radius:22px;;
 animation: pulse 3s infinite 3s cubic-bezier(0.25, 0, 0, 1);
 box-shadow: 0 0 0 0 white;
 }
-
+.about{
+  padding-left:10%;
+  padding-right:10% ;
+}
 @keyframes pulse {
   to {
     box-shadow: 0 0 0 8px rgba(255, 255, 255, 0); 
