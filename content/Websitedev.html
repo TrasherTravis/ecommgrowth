@@ -54,7 +54,7 @@
           </li>
           <li class="mr-3">
             <a class="menu-item toggleColour inline-block text-black no-underline hover:text-underline py-2 px-4"
-              href="#">About</a>
+              href="../about.html">About</a>
           </li>
           <li class="mr-3">
             <a class="menu-item toggleColour inline-block text-black no-underline hover:text-underline py-2 px-4"
@@ -62,10 +62,10 @@
           </li>
           <li class="mr-3">
             <a class="menu-item toggleColour inline-block text-black no-underline hover:text-underline py-2 px-4"
-              href="#pricing">Pricing</a>
+              href="../index.html#pricing">Pricing</a>
           </li>
         </ul>
-        <button id="navAction" href="#name"
+        <button id="navAction" href="#name" href="#name" onclick="document.location='../index.html'"
           class="lets mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
           Let's Talk
         </button>
@@ -74,9 +74,9 @@
     <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
   </nav>
   <!--Hero-->
-  <section class="bg-white py-14 min-h-8">
-    <div class="solution container mx-auto flex flex-wrap pt-4 pb-12 ">
-      <h2 class=" w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
+  <section id="" class="bg-white min-h-8">
+    <div class="container mx-auto flex flex-wrap pt-4">
+      <h2 class=" w-full mt-16 text-4xl font-bold leading-tight text-center text-gray-800">
         WEBSITE DEVELOPMENT
       </h2>
       <div class="snap-center mx-4 py-12">
@@ -138,7 +138,7 @@
     </div>
     <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
       <div class="flex text-gray-800 items-center justify-center">
-        <a class="km" href="/content/sellercon.html" target="_blank">
+        <a class="km" href="/content/sellercon.html">
           Read More..
         </a>
       </div>
@@ -375,7 +375,105 @@
     <div class="py-4 text-sm text-center dark:text-gray-400">© 2023 eCommGrowth. All rights reserved.</div>
   </footer>
   <!-- Footer Ends Here -->
- 
+  <script>
+    var scrollpos = window.scrollY;
+    var header = document.getElementById("header");
+    var navcontent = document.getElementById("nav-content");
+    var navaction = document.getElementById("navAction");
+    var brandname = document.getElementById("brandname");
+    var toToggle = document.querySelectorAll(".toggleColour");
+    var navtoggle = document.getElementById("nav-toggle");
+    
+
+    document.addEventListener("scroll", function () {
+      /*Apply classes for slide in bar*/
+      scrollpos = window.scrollY;
+
+      if (scrollpos > 10) {
+        header.classList.add("bg-white");
+        navaction.classList.remove("bg-white");
+        navaction.classList.add("gradient");
+        navaction.classList.remove("text-gray-800");
+        navaction.classList.add("text-white");
+        //Use to switch toggleColour colours
+        for (var i = 0; i < toToggle.length; i++) {
+          toToggle[i].classList.add("text-gray-800");
+          toToggle[i].classList.remove("text-white");
+        }
+        header.classList.add("shadow");
+        navcontent.classList.remove("bg-gray-100");
+        navcontent.classList.add("bg-white");
+        
+      } else {
+        header.classList.remove("bg-white");
+        navaction.classList.remove("gradient");
+        navaction.classList.add("bg-white");
+        navaction.classList.remove("text-white");
+        // navaction.classList.add("text-gray-800");
+        // navtoggle.classList.remove("text-grey-900")
+        navtoggle.classList.add("text-white-800")
+        //Use to switch toggleColour colours
+        for (var i = 0; i < toToggle.length; i++) {
+          // toToggle[i].classList.add("text-white");
+          // toToggle[i].classList.remove("text-gray-800");
+        }
+        header.classList.remove("shadow");
+        navcontent.classList.remove("bg-white");
+        navcontent.classList.add("bg-gray-100");
+        navtoggle.classList.remove("text-white-800");
+        navtoggle.classList.add("text-gray-900");   
+      }
+    });
+  </script>
+  <script>
+    /*Toggle dropdown list*/
+    // https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8
+
+    var navMenuDiv = document.getElementById("nav-content");
+    var navMenu = document.getElementById("nav-toggle");
+
+    document.onclick = check;
+    function check(e) {
+      var target = (e && e.target) || (event && event.srcElement);
+
+      //Nav Menu
+      if (!checkParent(target, navMenuDiv)) {
+        // click NOT on the menu
+        if (checkParent(target, navMenu)) {
+          // click on the link
+          if (navMenuDiv.classList.contains("hidden")) {
+            navMenuDiv.classList.remove("hidden");
+          } else {
+            navMenuDiv.classList.add("hidden");
+          }
+        } else {
+          // click both outside link and outside menu, hide menu
+          navMenuDiv.classList.add("hidden");
+        }
+      }
+    }
+    function checkParent(t, elm) {
+      while (t.parentNode) {
+        if (t == elm) {
+          return true;
+        }
+        t = t.parentNode;
+      }
+      return false;
+    }
+  </script>
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/644e4c6d4247f20fefee9298/1gv8tl3om';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
   <!--End of Tawk.to Script-->
 </body>
 

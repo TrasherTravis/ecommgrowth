@@ -332,7 +332,6 @@ box-shadow: 0 0 0 0 white;
 }
 
 
-
 @media screen and (max-width: 1024px){
     .mr-3{
         text-align: center;
@@ -373,6 +372,16 @@ box-shadow: 0 0 0 0 white;
       padding: 0px;
     }
 
+    .content{
+      padding-bottom: 0px;
+    }
+
+    #our-services{
+      padding-top: 20px;
+      background-color: #fff;
+
+    }
+
    
   }
 
@@ -392,6 +401,15 @@ box-shadow: 0 0 0 0 white;
 
     .solution>h2{
       font-size: 1.5rem;;
+    }
+
+    .content{
+      padding-bottom: 0px;
+    }
+
+    #our-services{
+      padding-top: 10px;
+      background-color: #fff;
     }
 
     .snap-center>img{
